@@ -24,7 +24,7 @@
 		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
 				<h1>The journey behind a typical hipster sunday hangover brunch</h1>
-				<p>Imagine sitting on the terrace of a Parisian café on Sunday morning before ending the weekend and going back to work, a coffee with a cigarette and a avocado toast in hand <em> - typical hipster routine </em>. <br /> Does your Arabica coffee come directly from Brazil ? Why is it that avocado toasts can be found anywhere now, compared to last decade ? Has the cost of the flour of your bread always been the same ? Where do you think your cigarette has been produced ?
+				<p>Imagine sitting on the terrace of a Parisian café on Sunday morning before ending the weekend and going back to work, a coffee with a cigarette and an avocado toast in hand <em> - typical hipster routine </em>. <br /> Does your Arabica coffee come directly from Brazil ? Why is it that avocado toasts can be found anywhere now, compared to last decade ? Has the cost of the flour of your bread always been the same ? Where do you think your cigarette has been produced ?
 					</p>
 				<p>The difficulty of knowing the actual story behind what we consume is the topic that interests us. We will show how factors such as globalization, economical and ecological crises, or social tendancies can indirectly influence the products we consume and their price, by focusing on four crops : wheat, avocados, coffee and tobacco.
 					</p>
@@ -61,8 +61,15 @@
 				</ul>
 			</div>
 			<div class="content">
-				<h2>Assumptions</h2>
-				<li> TODO : Define VPQ </li>
+				<h2>Assumptions & recommendations:</h2>
+				<ul>
+					<li> Main recent analysis are done on year 2016, more recent datasets are incomplete. </li>
+					<li> Gross Profit: based on available data, we define the gross profit of a country, given a product, by the difference between the export value (in 1,000$) and the import value (in 1,000$). </li>
+					<li> Value per Quantity for exportation and importation: the ratio between the total value import (resp. export) over the total quantity importation (resp. exportation). Unit: [1,000$ / Tonnes]. </li>
+					<li> Population estimation per countries is provided by datasets from Geopandas. </li>
+					<li> Interactive geographic maps: it is adviced to select one category at a time.</li>
+				</ul>
+				
 			</div>
 		</section>
 
@@ -79,7 +86,7 @@
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content" align="justify">
 				<p>One can see that the production of most crops parent categories increased from the 1960’ until now. This trend was clearly expected because the population has increased as well. In 1961 there was 3’091 million human beings and in 2016 the number has doubled to reach 7’464 mio [<a href="#ref:WorldPop">1</a>]. </p>
-				<p>We can observe that an increase in the world population requires a higher food production in order to satisfy some requirements. Generally in many populations we’ve seen the income increasing and many people left the poverty state. According to the world bank, nearly 1.1 billion fewer people are living in extreme proverty (live with less than 1.9$ a day) in 2015 than in 1990 [<a href="#ref:Poverty">2</a>]. With the increasing income, the diets will generally change, people will prefer high-value foods (such as livestock products) as opposed to starchy food (such as wheat). So the world production is facing two challenges : producing in quantities that was never bigger and continuously adapt to produce the right kind of crops. </p>
+				<p>We can observe that an increase in the world population requires a higher food production in order to satisfy needs. Generally in many populations we’ve seen the income increasing and many people left the poverty state. According to the world bank, nearly 1.1 billion fewer people are living in extreme proverty (live with less than 1.9$ a day) in 2015 than in 1990 [<a href="#ref:Poverty">2</a>]. With the increasing income, the diets will generally change, people will prefer high-value foods (such as livestock products) as opposed to starchy food (such as wheat). So the world production is facing two challenges : producing in quantities that was never bigger and continuously adapt to produce the right kind of crops. </p>
 			</div>
 			<object style="width:80%" type="text/html" data="data/AllProds.html"></object>
 		</section>
@@ -88,8 +95,8 @@
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content" align="justify">
 				<p>This graphs illustrates how the demand for crops changed over time. Most of the categories such as coffee, cocoa, and raw materials, rubber for example increased far more than the world population or cereals. Also, except tobacco and vegetable textile fibers, the relative increase in the production of other crops was greater than the increase in the world population.</p>
-				<p>Rubber is a raw materials used in the manufacturing of many derived products, the most known being tyres. With 127 million vehicles on the world in 1960 and 1322 mio in 2016, natural increase in the demand for rubber [<a href = "#ref:MotorVeihcle">3</a>].</p>
-				<P>Hence the demand for agricultural raw materials such as rubber can be related to economic growth. The adavanced in fertilizers, transportation or refregiration of vegetables or fruits totally change the way people consume food or food was available 60 years ago is not the same as today. It was difficult even unconceivable to eat tomatoes in winter in Sweden after you went out to hunt for the northern lights (another typical hipster activity).  </p>
+				<p>Rubber is a raw materials used in the manufacturing of many derived products, the most known being tyres. With 127 million vehicles on the world in 1960 and 1322 mio in 2016, there is natural increase in the demand for rubber [<a href = "#ref:MotorVeihcle">3</a>].</p>
+				<P>Hence the demand for agricultural raw materials such as rubber can be related to economic growth. The advanced in fertilizers, transportation or refregiration of vegetables or fruits totally change the way people consume food or food was available 60 years ago is not the same as today. It was difficult even unconceivable to eat tomatoes in winter in Sweden after you went out to hunt for the northern lights (another typical hipster activity).  </p>
 			</div>
 			<object style="width:80%" type="text/html" data="data/IndexedProds.html"></object>
 
@@ -99,16 +106,16 @@
 		<!-- Four -->
 		<section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
 			<div class="content" align="justify">
-				<p> On the scatter we can see the four crops in our hipster brunch. Of course they’re not found at the same location on the plot which shows where each crop of crops in products in which quantities nowadays.</p>
-				<p> We can observe different category : 
+				<p> On the scatter plot we can see the four crops in our hipster brunch. Of course they’re not found at the same location on the plot which shows where each crop of crops in products in which quantities nowadays.</p>
+				<p> We can observe several categories : 
 					<ul>
-						<li>The cereals are cheap and produced and lot, the same for Cassava or Potatoes for the vegetables;</li>
-						<li>Fruits, Spices, Coffee and Tea are more expensive and produced less than the vegetables</li>
-						<li>Vanilla is the most expensive and the second to last most produced crops</li>
+						<li>The cereals are cheap and produced and lot, the same for cassava or potatoes for the vegetables.</li>
+						<li>Fruits, spices, coffee and Tea are more expensive and produced less than the vegetables.</li>
+						<li>Vanilla is the most expensive and the second to last most produced crops.</li>
 					</ul>
 				</p>
 				<p>Indeed, the vertical axis represents the value per quantity (VPQ). It’s simply the product of a number and a unit, and the number multiplying the unit is the numerical value of the quantity expressed in that unit [<a href="#ref:VPQ">4</a>]. </p>
-				<p>Tobacco is the most expensive product of interest and he’s as produced as the Coffee and Avocados. On the other hand wheat is much more produced and an order of magnitude cheaper than the other crops of interest. The next parts will investigate the crops starting with the wheat as a crops produced and consumed worldwide. </p>
+				<p>Tobacco is the most expensive product of interest and he’s as produced as the coffee and avocados. On the other hand wheat is much more produced and an order of magnitude cheaper than the other crops of interest. The next parts will investigate the crops starting with the wheat as a crops produced and consumed worldwide. </p>
 			</div>
 			<object style="width:80%" type="text/html" data="data/WorldwideProds.html"></object>
 
@@ -197,9 +204,61 @@
 		<section id="avocado" class="wrapper style1 align-center" style="background-color:white">
 			<div class="inner">
 				<h1>Fancy Avocado</h1>
-				<p class="align-left"> It is common knowledge that avocado toast have become more and more fancy recently in Western Europe. But this tropical fruit does not naturally grow here. <br/> Let's see the link between social tendancies and food trades.
+				<p class="align-center"> Avocado is everywhere. <br/>You cannot escape it, it goes on everything: on toast, in burgers, in sushi… You can see it everywhere: on Instagram, Instagram stories… <br/> Any great source of content! <br/>Avocados are usually cultivated in tropical and Mediterranean climates. <br/> To find it at your local, organic Sunday brunch in Paris (or Lausanne), something has to be going on. Let’s figure it out! </p>
 			</div>
 		</section>
+
+		<!-- Avocado intro -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content" align="justify">
+				<p>A few years ago, this beautiful fruit became the sexiest ingredient of the decade. And 2020 ain’t gonna stop it. You can see on <a href="https://trends.google.com/trends/explore?date=all&q=avocado,cucumber">Google Trends</a>, the <strong>rate of interest</strong> of the delightful avocado compared to the one of the boring cucumber. </p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/avocado_trend.html"></object>			
+
+		</section>
+
+
+		<!-- <section id="avocado" class="wrapper style1 justify" style="background-color:white">
+			<div class="inner">
+				<p class="justify"> In 1961, producers of avocados are mostly Central to South America, and African countries (Morocco, Kenya, Mexico, Paraguay...). The USA also produced avocados, and were the first Northern country to produce avocados. Over the years, some Europeans countries started producing their own: the first record of French avocado appears in 1988, Portugal in 1990. China started producing avocados in 1992.</p>
+			</div>
+		</section>-->
+
+
+		
+
+		<!-- Coffee quantity -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content" align="justify">
+				<h3>Main importers and exporters of avocados</h3>
+				<p> Nowadays, the main players in the avocado trade are the USA huge importers, and Mexico exports most avocados in the world. Our brunch seems way less local...</p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/ImportExportAvocados.html"></object>
+
+		</section>
+
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content" align="justify">
+				<p> <br/><br/>
+				We can see that the export value per quantity as well as the production skyrocketed in the 2000s, with the trend. Avocado has become a valuable commodity for Mexico, that used to export it rather cheap.
+			<br/><br/></p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/MexicoAvocados.html"></object>			
+
+		</section>
+
+
+		<section class="spotlight style1 orient-left content-align-right image-position-left onscroll-image-fade-in" style="background-color:white">
+			<object style="width:100%" type="text/html" data="data/avocados_2016_profit.html"></object>			
+			<div class="content" align="justify">
+				<h3>#overexploitation</h3>
+				<p>We can see on the map that only a few countries make a profit by exporting avocados, meaning these few countries need to feed the entire world. <br/> Overexploitation or overharvesting can cause environmental and even societal issues. Growing avocados costs water to countries that do not have much, <a href="https://www.kcet.org/shows/earth-focus/green-gold-a-global-demand-for-avocados-leaves-people-without-water-in-chile"> in Chile for example </a>. <br/> <a href="https://www.latimes.com/world-nation/story/2019-11-20/mexico-cartel-violence-avocados">In mexico</a>, drug cartels fight over the control of the avocado industry as this green gold has become this valuable. <br/>
+				We could call this the ripple effect of the #avocadotoast.</p>
+			</div>
+		</section>
+		
+
+
 
 		<!-- Coffee -->
 		<section id="coffee" class="wrapper style1 align-center" style="background-color:white">
@@ -284,7 +343,7 @@
 		<!-- Coffee conclusion -->
 		<section id="coffee-conclusion" class="wrapper style1 align-center" style="background-color:white">
 			<div class="inner">
-				<h3>Why do I care ?</h3>
+				<h3>In the end, what about coffee ?</h3>
 				<p class='justify'> Infinite analysis can be done (e.g. comparing the gross profit Switzerland makes from trading green coffee beans, to the gross profit Germany makes) and we don’t want to drown you in numbers, but rather to show you how complex can the coffee market be. </p>
 				<p> What does lie behind the cost of your coffee ? Why does it cost 2.50€ in France vs. 4.50.- in Switzerland ? Of course there are many other factors that come into play, but at least now you know more about where you coffee may have been produced, roasted, and why would countries come into play in the coffee market even if it doesn't seem obvious at first glance.
 
